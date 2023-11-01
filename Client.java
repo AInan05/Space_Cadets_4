@@ -11,7 +11,7 @@ public class Client {
 
   public static void main(String[] args) throws IOException {
 
-    // Create socket with server's IP and port
+    // Create socket with server's IP and port.
     Socket socket = new Socket("localhost", 11111);
     System.out.println("Connected to the server.");
 
@@ -30,7 +30,7 @@ public class Client {
     Thread sendThread = new Thread(new SendMessageThread(output));
     Thread receiveThread = new Thread(new ReceiveMessageThread(input));
 
-    // Start threads.
+    // Run threads.
     sendThread.start();
     receiveThread.start();
   }
