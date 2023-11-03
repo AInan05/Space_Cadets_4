@@ -13,7 +13,7 @@ public class Server {
 
   public static void main(String[] args) throws IOException {
     ServerSocket serverSocket = new ServerSocket(11111); // Choose your port
-    System.out.println("Server started successfully. Listening for clients...");
+    System.out.println("Listening for clients...");
 
     while (true) {
 
